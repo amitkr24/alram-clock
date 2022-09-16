@@ -45,7 +45,7 @@ function getCurrTime() {
   return time;
 }
 
-
+// get input time
 function getInput(e) {
   e.preventDefault();
   const hourValues    = setAlarmHours.value;
@@ -67,6 +67,7 @@ function addAlaramToDom(time, intervalId) {
   alarmContainer.prepend(alarm);
 }
 
+//set alarm and alert if current time matches with set alram timing
 function setAlarm(time, fetching = false) {
   //alert(time);
   const alarm = setInterval(() => {
